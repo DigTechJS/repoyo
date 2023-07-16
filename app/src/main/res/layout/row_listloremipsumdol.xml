@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listloremipsumdolRowModel" type="com.repoyo.app.modules.paidcontent.data.model.ListloremipsumdolRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowloremipsumdol"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:id="@+id/txtLoremipsumdol"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.64" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:text="@{listloremipsumdolRowModel.txtLoremipsumdol}"
+            style="@style/txtGilroyregular14" tools:text="@string/msg_lorem_ipsum_dol6"/>
+        <LinearLayout android:id="@+id/linearRowvector"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginStart="@dimen/_100pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_weight="0.36" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageVector"
+                android:layout_height="@dimen/_1pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="@dimen/_14pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_bluegray_400_1x14"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_bluegray_400_1x14"/>
+            <ImageButton
+                android:background="@drawable/rectangle_border_green_600_radius_10"
+                android:id="@+id/btnPasswordcriterTwo"
+                android:layout_height="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_65pxh"
+                android:layout_width="@dimen/_20pxh"
+                android:paddingHorizontal="@dimen/_4pxh"
+                android:paddingVertical="@dimen/_4pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_passwordcriter" tools:ignore="ContentDescription"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.repoyo.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.repoyo.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.repoyo.app.modules.dynamiccontent.ui.DynamicContentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.search.ui.SearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.pledgetracking.ui.PledgeTrackingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.contentmanagement.ui.ContentManagementActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.documentopener.ui.DocumentOpenerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.twofactorauthentication.ui.TwoFactorAuthenticationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.saveaspdf.ui.SaveAsPdfActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.repoyo.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.repoyo.app.modules.manageblogcomments.ui.ManageBlogCommentsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.surveys.ui.SurveysActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.blogimporting.ui.BlogImportingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.useraccount.ui.UserAccountActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.documents.ui.DocumentsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.blogpostsmanagement.ui.BlogPostsManagementActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.paidcontent.ui.PaidContentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.termsandconditions.ui.TermsAndConditionsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.reviews.ui.ReviewsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.notes.ui.NotesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.securitypolicy.ui.SecurityPolicyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.translation.ui.TranslationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.customform.ui.CustomFormActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.feedbackcollection.ui.FeedbackCollectionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.repoyo.app.modules.pagination.ui.PaginationActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

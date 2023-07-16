@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="blogImportingVM" type="com.repoyo.app.modules.blogimporting.data.viewmodel.BlogImportingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBlogImporting"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearIPhoneXorne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageLeftSide"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_width="@dimen/_54pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_leftside"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_leftside"/>
+                <ImageView android:id="@+id/imageRightSide"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_271pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_66pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rightside"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rightside"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearRowarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_height="@dimen/_12pxh"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="@dimen/_11pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtBlogImporting"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_98pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.92" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{blogImportingVM.blogImportingModel.txtBlogImporting}"
+                style="@style/txtGilroysemibold24" tools:text="@string/lbl_blog_importing"/>
+            <ImageView android:id="@+id/imageMorevertical"
+                android:layout_height="@dimen/_16pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:layout_marginStart="@dimen/_103pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="@dimen/_2pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_morevertical"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_morevertical"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnvector"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearFileUpload"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginEnd="@dimen/_120pxh"
+                    android:layout_marginStart="@dimen/_120pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtImportBlogsFr"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_120pxh"
+                    android:layout_marginStart="@dimen/_120pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{blogImportingVM.blogImportingModel.txtImportBlogsFr}"
+                    style="@style/txtGilroymedium18_1" tools:text="@string/msg_import_blogs_fr"/>
+                <ImageView android:id="@+id/imageWordpresslogo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_69pxh"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_120pxh"
+                    android:layout_marginStart="@dimen/_120pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_69pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_wordpresslogo}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_wordpresslogo"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnImport"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_499pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_import"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_import"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

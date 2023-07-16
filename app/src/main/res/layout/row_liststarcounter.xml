@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="liststarcounterRowModel" type="com.repoyo.app.modules.reviews.data.model.ListstarcounterRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowstarcounter"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtStarCounter"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{liststarcounterRowModel.txtStarCounter}"
+            style="@style/txtGilroyregular16" tools:text="@string/lbl_5_star"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnrectangle1384"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_weight="0.81" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylebluegray_50cornerRadius">
+            <View
+                android:background="@drawable/rectangle_bg_orange_a200_radius_tl_6_bl_6"
+                android:id="@+id/viewRectangle1384"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_82pxh" android:layout_width="@dimen/_208pxh"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtSixtyFive"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_weight="0.08" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{liststarcounterRowModel.txtSixtyFive}"
+            style="@style/txtGilroyregular16" tools:text="@string/lbl_65"/>
+    </LinearLayout>
+</layout>

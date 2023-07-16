@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listgroup9892RowModel" type="com.repoyo.app.modules.paidcontent.data.model.Listgroup9892RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumngroup9892"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_3">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowgroup9892"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_300_radius_6"
+                    android:id="@+id/btnGroup9892"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_width="@dimen/_32pxh"
+                    android:paddingHorizontal="@dimen/_5pxh"
+                    android:paddingVertical="@dimen/_5pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_group9892" tools:ignore="ContentDescription"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBasic"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.61"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listgroup9892RowModel.txtBasic}"
+                    style="@style/txtGilroysemibold20_2" tools:text="@string/lbl_basic"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listgroup9892RowModel.txtPrice}"
+                style="@style/txtGilroysemibold18_2" tools:text="@string/lbl_159_year"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPriceOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listgroup9892RowModel.txtPriceOne}"
+                style="@style/txtGilroymedium12" tools:text="@string/lbl_13_25_month"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

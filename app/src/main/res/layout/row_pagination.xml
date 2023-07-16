@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="paginationRowModel" type="com.repoyo.app.modules.pagination.data.model.PaginationRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectanglenineteen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylecornerRadius_3">
+        <ImageView android:id="@+id/imageRectangleNineteen"
+            android:layout_gravity="top|end"
+            android:layout_height="@dimen/_101pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_118pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_4pxh}"
+            imageRes="@{@drawable/img_rectangle19}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle19"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtCountry"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_11pxh"
+            android:text="@{paginationRowModel.txtCountry}"
+            style="@style/txtGilroysemibold18_1" tools:text="@string/msg_battlegrounds_m"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtDescription"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_2pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:text="@{paginationRowModel.txtDescription}"
+            style="@style/txtGilroymedium14_4" tools:text="@string/msg_krafton_has_bee2"/>
+    </FrameLayout>
+</layout>

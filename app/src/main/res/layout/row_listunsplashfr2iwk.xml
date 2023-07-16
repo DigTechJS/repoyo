@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listunsplashfr2iwkRowModel" type="com.repoyo.app.modules.dynamiccontent.data.model.Listunsplashfr2iwkRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowunsplashfr2iwk"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageUnsplashFr2iwK"
+            android:layout_height="@dimen/_91pxh"
+            android:layout_width="@dimen/_101pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+            imageRes="@{@drawable/img_unsplashfr2iwk}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashfr2iwk"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnhustle"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_weight="0.6" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtHustle"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listunsplashfr2iwkRowModel.txtHustle}"
+                style="@style/txtGilroysemibold20_1" tools:text="@string/lbl_hustle"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtYoungMillftU"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listunsplashfr2iwkRowModel.txtYoungMillftU}"
+                style="@style/txtGilroyregular16_1" tools:text="@string/msg_young_mill_ft_u"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

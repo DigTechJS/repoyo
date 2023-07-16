@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="twoFactorAuthenticationVM" type="com.repoyo.app.modules.twofactorauthentication.data.viewmodel.TwoFactorAuthenticationVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearTwoFactorAuth"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearIPhoneXorne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageLeftSide"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_width="@dimen/_54pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_leftside"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_leftside"/>
+                <ImageView android:id="@+id/imageRightSide"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_271pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_66pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rightside"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rightside"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView android:id="@+id/imageVector"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_246pxv"
+            android:layout_width="@dimen/_38pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vector_blue_a700_60x38"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_blue_a700_60x38"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOTPVerificatio"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{twoFactorAuthenticationVM.twoFactorAuthenticationModel.txtOTPVerificatio}"
+            style="@style/txtGilroysemibold24_1" tools:text="@string/msg_otp_verificatio"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtOTPIsSendto"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{twoFactorAuthenticationVM.twoFactorAuthenticationModel.txtOTPIsSendto}"
+            style="@style/txtGilroymedium18" tools:text="@string/msg_otp_is_send_to"/>
+        <ImageView android:id="@+id/imageFrame9880"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_52pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="@dimen/_320pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_frame9880"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_frame9880"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnVerifyOtp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:paddingBottom="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:text="@string/lbl_verify_otp"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_verify_otp"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{twoFactorAuthenticationVM.twoFactorAuthenticationModel.txtLanguage}"
+            style="@style/txtGilroymedium16_3" tools:text="@string/msg_didn_t_recieved"/>
+    </LinearLayout>
+</layout>

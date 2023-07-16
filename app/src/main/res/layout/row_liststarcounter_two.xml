@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="liststarcounterTwoRowModel" type="com.repoyo.app.modules.reviews.data.model.ListstarcounterTwoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowstarcounterTwo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtStarCounterTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_weight="0.11" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{liststarcounterTwoRowModel.txtStarCounterTwo}"
+            style="@style/txtGilroyregular16" tools:text="@string/lbl_3_star"/>
+        <ProgressBar android:id="@+id/progressBarGroup9779"
+            android:indeterminate="false"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_weight="0.83" android:layout_width="0dp"
+            android:max="100" android:minHeight="@dimen/_26pxv"
+            android:progress="5"
+            android:progressDrawable="@drawable/layer_list_bg_bluegray_50_radius_6" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtFour"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_weight="0.06" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{liststarcounterTwoRowModel.txtFour}"
+            style="@style/txtGilroyregular16" tools:text="@string/lbl_4"/>
+    </LinearLayout>
+</layout>

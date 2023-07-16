@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderunsplashrncpixModel" type="com.repoyo.app.modules.dynamiccontent.data.model.ImageSliderSliderunsplashrncpixModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowunsplashrncpix"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylecornerRadius">
+        <ImageView android:id="@+id/imageUnsplashRnCPiX"
+            android:layout_height="@dimen/_153pxh"
+            android:layout_width="@dimen/_316pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+            imageUrl="@{imageSliderSliderunsplashrncpixModel.imageUnsplashRnCPiX}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashrncpix"/>
+        <ImageView android:id="@+id/imageUnsplashQzpgqE"
+            android:layout_height="@dimen/_153pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="@dimen/_316pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+            imageUrl="@{imageSliderSliderunsplashrncpixModel.imageUnsplashQzpgqE}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashqzpgqe"/>
+        <ImageView android:id="@+id/imageUnsplashRnCPiXOne"
+            android:layout_height="@dimen/_153pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="@dimen/_316pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+            imageUrl="@{imageSliderSliderunsplashrncpixModel.imageUnsplashRnCPiXOne}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashrncpix_153x316"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listprofileimglargRowModel" type="com.repoyo.app.modules.manageblogcomments.data.model.ListprofileimglargRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowprofileimglarg"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageProfileImgLarg"
+            android:layout_height="@dimen/_46pxh"
+            android:layout_marginBottom="@dimen/_30pxv"
+            android:layout_width="@dimen/_46pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_profileimglarg}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_profileimglarg"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_weight="0.88" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listprofileimglargRowModel.txtLanguage}"
+                style="@style/txtGilroymedium14_5" tools:text="@string/msg_danial_sams_l"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLoremipsumdol"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listprofileimglargRowModel.txtLoremipsumdol}"
+                style="@style/txtGilroyregular14_1" tools:text="@string/msg_lorem_ipsum_dol4"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowgroup"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageGroup"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_18pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtThirty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listprofileimglargRowModel.txtThirty}"
+                    style="@style/txtGilroymedium14_1" tools:text="@string/lbl_30"/>
+                <ImageView android:id="@+id/imageGroupOne"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_18pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group_bluegray_400"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group_bluegray_400"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listprofileimglargRowModel.txtTen}"
+                    style="@style/txtGilroymedium14_1" tools:text="@string/lbl_10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

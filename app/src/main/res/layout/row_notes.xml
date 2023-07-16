@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notesRowModel" type="com.repoyo.app.modules.notes.data.model.NotesRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowvector"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyleblue_51cornerRadius">
+        <ImageView android:id="@+id/imageVectorOne"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_50pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="@dimen/_18pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vector_bluegray_400_20x18"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_bluegray_400_20x18"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtAllNotes"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_47pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_weight="0.78" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{notesRowModel.txtAllNotes}"
+            style="@style/txtGilroymedium16_7" tools:text="@string/lbl_all_notes"/>
+    </LinearLayout>
+</layout>
